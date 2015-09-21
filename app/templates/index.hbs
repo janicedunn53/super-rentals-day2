@@ -8,7 +8,7 @@
 
 <ul>
   {{#each model as |rental|}}
-  <li>{{rental.owner}}'s {{rental.type}}, {{rental.city}}</li>
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
